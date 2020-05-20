@@ -13,8 +13,8 @@
 	    
 	     <jdbcConnection driverClass="com.mysql.jdbc.Driver"
 	                        connectionURL="jdbc:mysql://47.94.88.204:3306/order?useUnicode=true&amp;characterEncoding=utf8&amp;rewriteBatchedStatements=true" 
-	                        userId="root"
-	                        password="TRX.0721">
+	                        userId=""
+	                        password="">
 	     </jdbcConnection>
 	     
 	     <!--指定javaBean生成的位置 javaBean生成的位置 -->
