@@ -14,7 +14,7 @@ import com.aliyuncs.profile.DefaultProfile;
 public class SMSUtil {
     public static String send(String phone,String signName,String templateCode,String templateParam) {
     	String result="";
-    	DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4FfhJh1A8othobCXGncR", "vTnN5Swx0wMFHSEnxDttOoVDeT5EZe");
+    	DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "", "");
         IAcsClient client = new DefaultAcsClient(profile);
 
         CommonRequest request = new CommonRequest();
