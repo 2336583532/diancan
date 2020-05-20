@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/base/base",
+    "pages/my/my",
+    "pages/kefu/kefu"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "点餐小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/base/base",
+      "text": "首页",
+      "iconPath": "images/home_no.png",
+      "selectedIconPath": "images/home_yes.png"
+    },
+  {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "images/me_no.png",
+      "selectedIconPath": "images/me_yes.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,2 @@
+<!--pages/kefu/kefu.wxml-->
+<web-view src="{{URL}}"></web-view>

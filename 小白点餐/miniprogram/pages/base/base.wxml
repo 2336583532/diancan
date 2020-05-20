@@ -1,0 +1,57 @@
+<!--pages/base/base.wxml-->
+<image src="cloud://xiaobai-ncwix.7869-xiaobai-ncwix-1301967492/images/timg.gif" id="logo"></image>
+<view>
+
+
+<view wx:for="{{data}}" wx:key="">
+  <view class="food_body">
+  <image src="cloud://xiaobai-ncwix.7869-xiaobai-ncwix-1301967492/images/{{item.fphoto}}" class="food_img"></image>
+<view class="food_name">{{item.fname}}</view>
+<view class="food_price">￥{{item.fprice}}</view>
+<image src="cloud://xiaobai-ncwix.7869-xiaobai-ncwix-1301967492/images/shopart.png" data-fid="{{item.fid}}" data-fprice="{{item.fprice}}" data-fname="{{item.fname}}" class="add_cart" bindtap="addCount"></image>
+</view>
+
+<!---->
+</view>
+</view>
+<view class="bottom_box">
+  <view class="shop_cartBox" bindtap="cascadeToggle">
+    <image class="shopCart_img" src="cloud://xiaobai-ncwix.7869-xiaobai-ncwix-1301967492/images/shopCart.png"></image>
+  </view>
+  <view class="all_money">总计：{{totalNumber}}件商品，共{{totalPrice}}元</view>
+  <button type="get"></button>
+  <button class="choose_ok  bc_green" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" style="width:180rpx;">确认</button>
+
+</view>
+<!--购物车弹窗  -->
+  <view hidden="{{maskFlag}}" class="modal-mask" bindtap="cascadeToggle"></view>
+  <view animation="{{animationData}}" class="cart_popup">
+    <view class="shopcart_title">
+      <span class="shopcart_close" bindtap="closeToggle">返回</span>购物车
+      <span class="shopcart_deleteAll" bindtap="cleanList">清空购物车</span>
+    </view>
+    <scroll-view scroll-y style="height:250px;margin-top:35px">
+      <block wx:for="{{cartList}}" wx:key="">
+      
+        <view class="cart_cells" wx:if="{{item.number > 0}}">
+          <view class="cells_name" data-index="{{index}}">{{item.name}}</view>
+          <view class="cells_price" data-index="{{index}}">{{item.price}}</view>
+          <view class="price-box">
+            <!-- 减号 -->
+            <view class="iconfont icon-minus2 fontP" hidden="{{item.number<=0}}" data-fid="{{item.id}}" data-fprice="{{item.price}}" data-fname="{{item.name}}" bindtap="minusCount"></view>
+            <!-- 数量 -->
+            <view class="value" style="color:#ff9600;margin-top:8rpx" hidden="{{item.number<=0}}" data-id="{{item.id}}">{{item.number}}</view>
+            <!-- 加号 -->
+            <view class="iconfont icon-plus1  fontP" bindtap="addCount" data-fid="{{item.id}}" data-fname="{{item.name}}" data-fprice="{{item.price}}"></view>
+          </view>
+          <icon class="shopcart_delete" type="clear" size="18" data-fid="{{item.id}}" data-id="{{item.id}}" bindtap="deleteOne" />
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="container" class="zn-uploadimg"> 
+</view>
+<modal hidden="{{hiddenmodalput}}" title="请输入手机号" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm"> 
+ <input  placeholder="请输入手机号码" maxlength="11" type="tel" bindinput="mobileInput" />  
+</modal>
+  

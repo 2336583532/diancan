@@ -1,0 +1,333 @@
+/* pages/base/base.wxss */
+@import '../../css/my.wxss';
+#logo{
+  width: 100%;
+  height: 300rpx;
+}
+.food_body{
+  margin-top: 20rpx;
+  background-color: rgb(217, 252, 240);
+}
+.food_img{
+  margin-left: 20rpx;
+  width: 160rpx;
+  height: 160rpx;
+}
+.food_name{
+  margin-left: 200rpx;
+  margin-top: -80px;
+}
+.food_price{
+  margin-left: 200rpx;
+  margin-top: 60rpx;
+}
+.add_cart{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 600rpx;
+  margin-top: -20px;
+}
+
+.bc_green{
+  background-color: #6fd3d4;
+}
+
+/*底部  */
+
+.bottom_box {
+  width: 100%;
+  height: 80rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  z-index: 100;
+  background-color: #fef4d1;
+}
+
+.shop_cartBox {
+  width: 110rpx;
+  height: 110rpx;
+  background-color: #0a98c1;
+  border-radius: 50%;
+  position: absolute;
+  top: -50rpx;
+  left: 40rpx;
+}
+
+.shopCart_img {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 24rpx;
+  left: 24rpx;
+}
+
+.all_money {
+  position: absolute;
+  width: 50%;
+  height: 80rpx;
+  top: 0;
+  left: 25%;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+
+.choose_ok {
+  position: absolute;
+  width: 25%;
+  height: 80rpx;
+  top: 0;
+  right: 0;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 40rpx;
+}
+
+.fontP {
+  color: #0a98c1;
+  font-size: 40rpx;
+}
+
+/*弹窗遮罩层  */
+
+.modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity:0.6;
+  background: #000;
+   z-index: 666; 
+}
+
+/*购物车弹窗  */
+
+.cart_popup {
+  width: 100%;
+  height: 285px;
+  background: #eef9fd;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  bottom: -285px;
+  overflow: auto;
+}
+
+.shopcart_title {
+  width: 100%;
+  height: 70rpx;
+  line-height: 80rpx;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  background-color: #0a98c1;
+  color: #fff;
+}
+
+/*关闭按钮  */
+
+.shopcart_close {
+  position: absolute;
+  left: 30rpx;
+  font-size: 28rpx;
+}
+
+/*清空购物车  */
+
+.shopcart_deleteAll {
+  position: absolute;
+  right: 30rpx;
+  font-size: 28rpx;
+}
+
+.margin_r {
+  margin-right: 30rpx;
+}
+
+/*购物车列表  */
+
+.cart_cells {
+  width: 100%;
+  height: 98rpx;
+  position: relative;
+  border-bottom: 1px #dedede solid;
+}
+
+.cells_name {
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  margin-left: 40rpx;
+  padding-top: 10rpx;
+}
+
+.cells_price {
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  top: 50rpx;
+  left: 0;
+  margin-left: 40rpx;
+  font-size: 14px;
+  padding-bottom: 10rpx;
+  color: #0a98c1;
+}
+
+.price-box {
+  padding-right: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20%;
+  position: absolute;
+  left: 60%;
+  top: 20rpx;
+}
+
+/*删除购物车某项  */
+
+.shopcart_delete {
+  position: absolute;
+  right: 40rpx;
+  top: 32rpx;
+}
+.weui_titleBox {
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 30rpx;
+  font-size: 32rpx;
+  color: #000;
+}
+
+.weui_titleBox::after {
+  border-bottom: none;
+}
+
+.weui_orderBox {
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 30rpx;
+  vertical-align: sub;
+  border-top: 1rpx solid #e5e5e5;
+}
+
+.weui_orderBox::before {
+  border-top: none;
+}
+
+.bd_radius {
+  border-radius: 50%;
+}
+
+.order_img {
+  vertical-align: sub;
+}
+
+/*合计  */
+
+.order_sum {
+  height: 100rpx;
+  padding: 0 30rpx;
+  line-height: 100rpx;
+  color: #000;
+  font-size: 32rpx;
+  overflow: hidden;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.order_sum::after {
+  border-bottom: none;
+}
+
+.order_sumMoney {
+  float: left;
+}
+
+.order_Money {
+  color: #0a98c1;
+}
+
+.order_payd {
+  color: #01bf05;
+  float: right;
+  vertical-align: sub;
+}
+
+.paydIcon {
+  vertical-align: sub;
+  font-size: 48rpx;
+  margin-right: 40rpx;
+}
+
+/*价格，份数  */
+
+.order_price {
+  font-size: 28rpx;
+}
+
+.fenxi {
+  width: 100%;
+  height: 10rpx;
+  background: #ddd;
+}
+/*判断是否登录  */
+.maskOne{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity:0.7;
+  background: #000;
+   z-index: 555; 
+}
+.w_isLoginBox{
+  position: absolute;
+  z-index: 888;
+  width: 76%;
+  height: 200px;
+  left: 12%;
+  top: 30%;
+  background: #fff;
+  border-radius: 20rpx;
+  }
+  /*标题  */
+.modal_title{
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+}
+.w_isLogin{
+   width: 94%; 
+   margin:0  auto;
+}
+.w_input{
+  border: 1px #ddd solid;
+  padding:0 0 0 10rpx;
+
+}
+.w_inputCode{
+  border-top: 0;
+}
+.weui-cell::before{
+  border-top: none;
+}
+.getcode-btn{
+  padding: 0 5px;
+  background-color: #3cc51f;
+  color: #fff;
+}
+/* 提交按钮 */
+.submitBtn{
+  width: 50%;
+  height: 40px;
+  margin-top:10px;
+}
+
+

@@ -1,0 +1,15 @@
+<!--pages/my/my.wxml-->
+<wxs src="../../wxs/util.wxs" module="filter" />
+
+<text id="my">我的订单</text> <text id="kefu" bindtap="toKefu">在线客服</text>
+<view class="line"></view>
+<view id="myOrder">
+  <view wx:for="{{data}}" wx:key="">
+  <view class="line"></view>
+    <view class="orderBody">
+      <view class="orderList">订单:{{item.orderList}}</view>
+     <view class="orderTime"> 创建时间:{{filter.dateFormat(item.date)}}</view>
+     <view class="phone">手机号:{{item.phone}}</view>
+    </view>
+  </view>
+</view>

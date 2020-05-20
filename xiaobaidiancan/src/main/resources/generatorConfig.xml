@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<context id="order" targetRuntime="MyBatis3">
+		<!-- 生成 JavaBean 对象继承 Serializable 类 -->
+	    <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+	    <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+	    
+	     <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+	                        connectionURL="jdbc:mysql://47.94.88.204:3306/order?useUnicode=true&amp;characterEncoding=utf8&amp;rewriteBatchedStatements=true" 
+	                        userId="root"
+	                        password="TRX.0721">
+	     </jdbcConnection>
+	     
+	     <!--指定javaBean生成的位置 javaBean生成的位置 -->
+		<javaModelGenerator
+			targetPackage="com.hnit.bean"
+			targetProject="src/main/java">
+		</javaModelGenerator>
+		<!-- 指定mapper生成的位置 -->
+		<sqlMapGenerator targetPackage="com.hnit.dao" targetProject="src/main/java">
+        	
+    	</sqlMapGenerator>
+		<!--指定dao接口生成的位置 -->
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.hnit.dao"
+			targetProject="src/main/java">
+		</javaClientGenerator>
+		
+		 <table schema="" tableName="order_user"></table>
+		  <table schema="" tableName="order_food"></table>
+		  <table schema="" tableName="order_managerType"></table>
+	</context>
+    
+</generatorConfiguration>

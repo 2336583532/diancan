@@ -1,0 +1,77 @@
+.login_title{
+	width: 50px !important;
+	background-color: #e7f0f4 !important;
+	border-width: 0 !important;
+	line-height: 29px !important;
+	height: 45px !important;
+	padding: 8px 10px !important;
+}
+.login_title i{
+	font-size: 24px;
+	color: #819dab;
+}
+.login_input{
+	margin-left: 50px !important;
+}
+.login_input input{
+	background-color: #f2f8fb !important;
+	border-width: 0 !important;
+	height: 45px !important;
+}
+.login_but{
+	height: 45px;
+	background-color: #57c201 !important;
+}
+.layui-form-radio>i{
+	margin-right: 0;
+}
+.layui-form-radio{
+	margin: 0;
+	marker: 0;
+}
+
+body{
+	overflow: hidden;
+}
+.loginBg{
+	width: 100%;
+	height: 460px;
+	background: url(../images/logo.gif) no-repeat;
+	background-size: 1920px 460px;
+}
+.login_main{
+	width: 100%;
+}
+.login_main .box{
+	width: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.login_main .box .left{
+	width: 50%;
+	height: 240px;
+	float: left;
+	text-align: center;
+	border-right: 1px solid #dfe2e3;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.login_main .box .left img{
+	width: 160px;
+	height: 160px;
+}
+.login_main .box .left p{
+	font-size: 30px;
+	font-weight: 600;
+}
+.login_main .box .right{
+	width: 50%;
+	height: 240px;
+	float: left;
+	padding: 10px 80px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}

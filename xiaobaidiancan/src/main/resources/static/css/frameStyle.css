@@ -1,0 +1,462 @@
+body{
+	overflow: hidden;
+}
+/**菜单**/
+.frameMenu{
+	width: 230px;
+	background-color: #1e2026;
+	float: left;
+	overflow: hidden;
+}
+.frameMenu .logo{
+	width: 230px;
+	height: 50px;
+	padding: 0 10px;
+	overflow: hidden;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+	-o-box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.frameMenu .logo img{
+	width: 40px;
+	height: 40px;
+	background-color: #383838;
+	border-radius: 5px;
+	margin-top: 5px;
+	display: none;
+}
+.logoText{
+	width: 100%;
+	height: 50px;
+	color: #bdc2c8;
+	text-align: center;
+}
+.logoText h1{
+	font-size: 18px;
+    font-weight: 600;
+	height: 50px;
+	line-height: 50px;
+}
+
+.frameMenu .menu{
+	width: 250px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: relative;
+}
+.frameMenu .menu .hoverBox{
+	width: 5px;
+    height: 56px;
+    background-color: #FF9966;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.frameMenu .menu ul{
+	width: 230px;
+}
+.frameMenu .menu ul li a{
+	display: block;
+	width: 100%;
+	height: 56px;
+	line-height: 56px;
+	color: #b0b0b2;
+	padding: 0 10px 0 20px;
+	position: relative;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.frameMenu .menu ul li a i.left{
+	width: 18px;
+	text-align: center;
+	float: left;
+	color: #b0b0b2;
+	margin-right: 7px;
+	font-size: 16px;
+	position: absolute;
+	top: 0;
+	left: 20px;
+	z-index: 1;
+}
+.frameMenu .menu ul li a font{
+	position: absolute;
+	top: 0;
+	left: 20px;
+	padding-left: 25px;
+	z-index: 1;
+}
+.frameMenu .menu ul li a i.right{
+	float: right;
+	color: #b0b0b2;
+	font-size: 12px;
+}
+.frameMenu .menu ul li a:hover{
+	color: #FFF;
+}
+.frameMenu .menu ul li a:hover i.left{
+	color: #FFF;
+}
+
+.frameMenu .menu dl{
+	display: none;
+	padding: 5px 0;
+	background-color: #15161b;
+}
+.frameMenu .menu dl dt a{
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #c2c2c2;
+	padding: 0 10px 0 45px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.frameMenu .menu dl dt a:hover{
+	color: #FFF;
+}
+
+/**main**/
+.main{
+	width: 250px;
+	float: left;
+}
+
+/**frameTop**/
+.frameTop{
+	width: 100%;
+	height: 50px;
+	background-color: #FFF;
+	border-bottom: 1px solid #f6f6f6;
+	position: relative;
+    z-index: 1;
+}
+.frameTop .shrinkBut{
+	height: 50px;
+	float: left;
+	padding: 0 10px;
+	position: relative;
+}
+.frameTop .shrinkBut .hoverBox{
+	width: 0px;
+    height: 2px;
+    background-color: #000;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+.frameTop .shrinkBut ul{
+	overflow: hidden;
+}
+.frameTop .shrinkBut ul li{
+	height: 50px;
+	float: left;
+	margin: 0 20px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.frameTop .shrinkBut ul li a{
+	display: block;
+	width: 100%;
+	height: 50px;
+}
+
+.frameTop .shrinkBut ul li i{
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	color: #333;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.frameTop .topMenu{
+	height: 50px;
+	float: right;
+	padding-right: 10px;
+}
+.frameTop .topMenu .hoverBox{
+	width: 0px;
+    height: 2px;
+    background-color: #000;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+.frameTop .topMenu ul li{
+	float: left;
+	position: relative;
+	z-index: 1;
+	background-color: transparent;
+}
+.frameTop .topMenu ul li a{
+	padding: 0 20px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	color: #333;
+	position: relative;
+}
+.frameTop .topMenu ul li a font{
+	display: block;
+	float: left;
+	max-width: 100px;
+	height: 50px;
+	overflow: hidden;
+	margin-right: 10px;
+}
+.frameTop .topMenu ul li a .news{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	margin-top: -8px;
+	margin-left: 3px;
+	width: 6px;
+	height: 6px;
+	line-height: 6px;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 50%;
+	display: block;
+	background-color: #FF5722;
+	color: #FFF;
+}
+.frameTop .topMenu ul li a i{
+	float: left;
+	font-size: 14px;
+	color: #333;
+}
+.frameTop .topMenu ul li dl{
+	min-width: 98px;
+	position: absolute;
+	top: 45px;
+	right: 10px;
+	z-index: 2;
+	float: right;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	padding: 5px 0;
+	display: none;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.12);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,.12);
+	-o-box-shadow: 0 2px 4px rgba(0,0,0,.12);
+	box-shadow: 0 2px 4px rgba(0,0,0,.12);
+}
+.frameTop .topMenu ul li:hover dl{
+	display: block;
+}
+.frameTop .topMenu ul li dl dt{
+	height: 40px;
+}
+.frameTop .topMenu ul li dl dt a{
+	height: 40px;
+	line-height: 40px;
+	color: #333;
+}
+.frameTop .topMenu ul li dl dt a:hover{
+	background-color: #F0F0F0;
+}
+
+/**frameMain**/
+.frameMain{
+	width: 100%;
+	height: 60px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.frameMain .title{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #F0F0F0;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+	-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+	-o-box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+}
+.frameMain .title .leftbut{
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	cursor: pointer;
+	border-right: 1px solid #f6f6f6;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.frameMain .title .leftbut:hover, .frameMain .title .rightbut:hover{
+	background-color: #f6f6f6;
+}
+.frameMain .title .rightbut{
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	cursor: pointer;
+	border-left: 1px solid #f6f6f6;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.frameMain .title .pageAllBut dl{
+	min-width: 140px;
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	z-index: 2;
+	float: right;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	padding: 5px 0;
+	display: none;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.12);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,.12);
+	-o-box-shadow: 0 2px 4px rgba(0,0,0,.12);
+	box-shadow: 0 2px 4px rgba(0,0,0,.12);
+}
+.frameMain .title .pageAllBut dl dt{
+	height: 40px;
+}
+.frameMain .title .pageAllBut dl dt a{
+	font-size: 14px;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color: #333;
+	padding: 0 20px;
+}
+.frameMain .title .pageAllBut dl dt a:hover{
+	background-color: #F0F0F0;
+}
+.frameMain .title .pageAllBut{
+	position: relative;
+}
+.frameMain .title .pageAllBut:hover dl{
+	display: block;
+}
+
+.frameMain .title .mainPageBox{
+	width: 400px;
+	height: 40px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.frameMain .title .mainPage{
+	width: 300px;
+	height: 40px;
+}
+.frameMain .title .mainPage .hoverBox{
+	width: 0px;
+    height: 2px;
+    background-color: #000;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.frameMain .title .mainPage span.active{
+    background-color: #f6f6f6;
+}
+.frameMain .title .mainPage span.active .hoverBox{
+	width: 100%;
+    opacity: 1;
+}
+.frameMain .title .mainPage span:hover .hoverBox{
+	width: 100%;
+    opacity: 1;
+	animation:mainPagehoverBoxAnima 0.5s ease both 0s;
+	-moz-animation:mainPagehoverBoxAnima 0.5s ease both 0s; /* Firefox */
+	-webkit-animation:mainPagehoverBoxAnima 0.5s ease both 0s; /* Safari and Chrome */
+	-o-animation:mainPagehoverBoxAnima 0.5s ease both 0s; /* Opera */
+	-ms-animation:mainPagehoverBoxAnima 0.5s ease both 0s; /* IE */
+}
+.frameMain .title .mainPage span{
+	display: block;
+	float: left;
+	padding: 0 15px;
+	height: 40px;
+	line-height: 40px;
+	border-right: 1px solid #f6f6f6;
+	background-color: #FFF;
+	position: relative;
+	cursor: pointer;
+}
+.frameMain .title .mainPage span i{
+	font-size: 18px;
+}
+.frameMain .title .mainPage span font{
+	margin-right: 15px;
+}
+.frameMain .title .mainPage span i.fork{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	font-size: 12px;
+	color: #c2c2c2;
+	border-radius: 50%;
+}
+.frameMain .title .mainPage span i.fork:hover{
+	color: #FFF;
+	background-color: #F94A24;
+}
+.frameMain .con{
+	width: 100%;
+	overflow: auto;
+}
+.frameMain .con iframe{
+	width: 100%;
+	overflow: hidden;
+}
+
+
+@keyframes mainPagehoverBoxAnima
+{
+	0%   { opacity: 1; width: 0;}
+	100% { opacity: 1; width: 100%;}
+}
+@-moz-keyframes mainPagehoverBoxAnima /* Firefox */
+{
+	0%   { opacity: 1; width: 0;}
+	100% { opacity: 1; width: 100%;}
+}
+@-webkit-keyframes mainPagehoverBoxAnima /* Safari and Chrome */
+{
+	0%   { opacity: 1; width: 0;}
+	100% { opacity: 1; width: 100%;}
+}
+@-o-keyframes mainPagehoverBoxAnima /* Opera */
+{
+	0%   { opacity: 1; width: 0;}
+	100% { opacity: 1; width: 100%;}
+}
+@-ms-keyframes mainPagehoverBoxAnima /* Opera */
+{
+	0%   { opacity: 1; width: 0;}
+	100% { opacity: 1; width: 100%;}
+}
