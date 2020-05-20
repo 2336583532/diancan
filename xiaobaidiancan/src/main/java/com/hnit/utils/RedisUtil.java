@@ -7,8 +7,8 @@ public class RedisUtil {
 	private static Jedis jedis;
 	
 	private void getJedis() {
-		jedis=new Jedis("47.94.88.204");
-		jedis.auth("TRX.0721");
+		jedis=new Jedis("");
+		jedis.auth("");
 	
 	}
 	public void addList(String key,String value) {
